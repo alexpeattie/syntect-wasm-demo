@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>syntect WASM demo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .container__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+
+      h2,
+      p {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      h2 {
+        margin: 3rem 0;
+      }
+
+      textarea {
+        width: 580px;
+        padding: 1rem;
+        line-height: 1.5;
+        flex-grow: 0;
+        border: 1px solid #495057;
+        resize: vertical;
+      }
+
+      .highlighted {
+        width: 580px;
+        flex-grow: 0;
+      }
+
+      .highlighted pre {
+        margin: 0;
+        padding: 1rem;
+        line-height: 1.5;
+        border-radius: 3px;
+        overflow-x: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        syntect Wasm demo (<a
+          href="https://github.com/alexpeattie/syntect-wasm-demo"
+          >source</a
+        >)
+      </h2>
+
+      <div class="container__inner">
+        <textarea spellcheck="false" id="code"></textarea>
+        <div class="highlighted"></div>
+      </div>
+
+      <p>
+        (Note: highlighting is
+        <a
+          href="https://medium.com/@jamischarles/what-is-debouncing-2505c0648ff1"
+          >debounced</a
+        >
+        250ms for smoother performance)
+      </p>
+      <script src="./bootstrap.js"></script>
+    </div>
+  </body>
+</html>
