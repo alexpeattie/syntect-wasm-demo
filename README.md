@@ -1,6 +1,6 @@
 # `syntect` Wasm demo
 
-A little demo of [`syntect`](https://github.com/trishume/syntect), cross-compiled to WebAssembly and running in the browser.
+A little demo of [`syntect`](https://github.com/trishume/syntect), compiled to WebAssembly and running in the browser.
 
 https://syntect-wasm-demo.alexpeattie.com/
 
